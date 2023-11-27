@@ -49,6 +49,11 @@ nav li a {
     text-decoration: none;
     font-weight: 500;
     text-transform: uppercase;
+    transition: 0.2s ease-in-out;
+}
+
+nav li a:hover {
+    color: rgb(0, 255, 123);
 }
 
 .video-header {
@@ -100,17 +105,20 @@ header {
     transition: 0.2s;
     background-image: linear-gradient(
         to right,
-        rgb(60, 0, 255),
-        rgb(89, 0, 255)
+        rgb(0, 255, 123),
+        rgb(6, 226, 112)
     );
     z-index: 0;
     transform: translateY(-150%);
-    box-shadow: 0px 0px 20px 0px white;
 }
 
 span {
     position: relative;
     z-index: 1;
+}
+
+.ticket:hover {
+    color: black;
 }
 
 .ticket:hover::after {
@@ -156,33 +164,33 @@ main {
     height: 100vh;
     background-color: #021437;
     position: relative;
-    z-index: 1;
+    z-index: 0;
     text-align: center;
     margin: auto;
 }
 .content-first {
     position: absolute;
-    z-index: 2;
+    z-index: 1;
     width: 40%;
     margin: auto;
     left: 0;
     right: 0;
     padding-top: 15rem;
+    font-family: "ITC-medium";
 }
 
 .wind {
     position: absolute;
-    height: 90%;
+    height: 80%;
     bottom: 0;
     animation-duration: 10s;
     animation-iteration-count: infinite;
+    animation-name: windL;
 }
 .leftBranch {
-    animation-name: windL;
     left: 0;
 }
 .rightBranch {
-    animation-name: windR;
     right: 0;
 }
 
@@ -192,22 +200,55 @@ main {
     }
 
     50% {
-        transform: rotate(-3deg);
+        transform: rotate(0deg);
     }
     100% {
         transform: rotate(3deg);
     }
 }
 
-@keyframes windR {
-    0% {
-        transform: rotate(-3deg);
-    }
+h1 {
+    font-family: "ITC-bold";
+}
 
-    50% {
-        transform: rotate(3deg);
-    }
-    100% {
-        transform: rotate(-3deg);
-    }
+.smallLine {
+    border: solid rgb(0, 255, 123);
+    width: 30%;
+    margin: auto;
+    margin: 1rem auto;
+}
+
+.ticketKoop {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    width: 10rem;
+    height: 4rem;
+    padding: 20px 20px;
+    border-radius: 25px;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(0, 255, 123);
+    overflow: hidden;
+    transition: 0.2s;
+    font-weight: 700;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ticketKoop:hover {
+    width: 10.3rem;
+    height: 4.3rem;
+    color: black;
+}
+
+.spotlight {
+    background-image: url(../img/spotlight-01.jpg);
+    background-size: cover;
+    background-position: center top;
+    height: 20rem;
+    width: 100%;
+    display: block;
 }
