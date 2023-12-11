@@ -189,7 +189,6 @@ main {
     margin: auto;
     left: 0;
     right: 0;
-    padding-top: 15rem;
     font-family: "ITC-medium";
 }
 
@@ -297,16 +296,13 @@ h1 {
 .person {
     width: 45%;
 }
-.person blockquote p {
-    margin: 0;
-}
 
 .person blockquote p {
     background-color: #17243b;
     border-radius: 1rem;
     padding: 3rem;
     font-size: 1rem;
-    height: 10rem;
+    margin: 0 0 5px 0;
 }
 
 .third-content {
@@ -319,7 +315,10 @@ h4 {
 }
 
 /* lightbox start */
-s .row:after {
+.row {
+    display: block;
+}
+.row:after {
     content: "";
     display: table;
     clear: both;
@@ -427,4 +426,83 @@ s .row:after {
     padding: 8px 12px;
     position: absolute;
     top: 0;
+}
+.fourth {
+    background-color: #030a1f;
+    height: 60vh;
+}
+
+form input {
+    width: 20rem;
+    border-radius: 0.2rem;
+    border-style: none;
+}
+
+.fourth {
+    position: relative;
+}
+
+.NB-left {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.NB-right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+footer {
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+}
+
+.footer-text {
+    display: flex;
+    gap: 5rem;
+}
+
+.smallLine-foot {
+    border: 1px solid rgb(0, 255, 123);
+    width: 30%;
+    margin: 1rem 0;
+    border-radius: 0.2rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links {
+    margin-top: 1rem;
+}
+
+.footer-links a {
+    transition: 0.2s ease-in-out;
+}
+.footer-links a:hover {
+    color: rgb(0, 255, 123);
+}
+
+.footer-contact,
+.lang {
+    font-weight: 700;
+}
+.footer-logo {
+    width: 10rem;
+}
+
+footer figure {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    height: 2rem;
+}
+
+footer figure img {
+    height: 1.5rem;
 }
