@@ -17,7 +17,7 @@ body {
     src: url("../fonts/ITC\ Avant\ Garde\ Gothic\ Std\ Medium.otf");
 }
 
-header nav {
+nav {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -27,7 +27,7 @@ header nav {
     z-index: 2;
     position: fixed;
 }
-header ul {
+nav ul {
     display: flex;
     list-style-type: none;
     color: white;
@@ -36,11 +36,11 @@ header ul {
     justify-content: end;
 }
 
-header nav img {
+nav img {
     width: 10rem;
 }
 
-header li {
+nav li {
     padding: 0.2rem 1rem;
 }
 
@@ -167,7 +167,6 @@ main {
 }
 
 .default {
-    height: 100vh;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -270,7 +269,6 @@ h1 {
 .second {
     background-image: url(../img/background-02.png);
     background-size: cover;
-    height: 100vh;
     text-align: center;
 }
 
@@ -505,4 +503,106 @@ footer figure {
 
 footer figure img {
     height: 1.5rem;
+}
+
+.spotlightParc {
+    background-image: url(../img/spotlight-02.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 20rem;
+    width: 100%;
+    display: block;
+}
+
+.first-parc {
+    display: block;
+}
+
+.active {
+    text-decoration: underline rgb(0, 255, 123);
+}
+
+.box {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: aqua;
+    position: absolute;
+}
+
+.canvas {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.map-pointers {
+    height: auto;
+}
+
+.gridbox {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 20rem);
+    grid-gap: 1rem;
+}
+
+.gridbox img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.gridbox img:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.gridbox img:nth-child(2) {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.gridbox img:nth-child(3) {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.gridbox img:nth-child(4) {
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.gridbox img:nth-child(6) {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+.gridbox img:nth-child(9) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.gridbox img:nth-child(10) {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+.gridbox img:nth-child(11) {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.gridbox img:nth-child(12) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.gridbox img:nth-child(13) {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.prev {
+    left: 0;
 }

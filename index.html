@@ -16,17 +16,19 @@
 
     <header>
         <nav id="navbar">
-            <img src="./static/img/logo.svg" alt="">
+            <a href="index.html">
+                <img src="./static/img/logo.svg" alt="">
+            </a>
             <ul>
-                <li><a href="">Parcours</a></li>
-                <li><a href="">Praktisch</a></li>
-                <li><a href="">Gallerij</a></li>
-                <li><a href="">FAQ</a></li>
-                <li><a href="" class="ticket"><span>Tickets</span></a></li>
+                <li><a href="parcours.html">Parcours</a></li>
+                <li><a href="praktisch.html">Praktisch</a></li>
+                <li><a href="galerij.html">Gallerij</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="tickets" class="ticket"><span>Tickets</span></a></li>
             </ul>
         </nav>
 
-        <script src="./data/nav.js"></script>
+        <script src="./static/js/nav.js"></script>
         
         <div class="header-content">
             <h3>
@@ -34,7 +36,7 @@
             </h3>
         </div>
         
-        <video playsinline="" autoplay="" muted="" loop="" poster="" class="video-bg">
+        <video playsinline="" autoplay="" muted="" loop="" poster="" id="video-bg">
             <source src="./static/video/lightopia-main-bxl-vbr-4mb-4mb.mp4" type="video/mp4">
         </video>
     </header>
@@ -132,97 +134,88 @@
 
         <div class="row">
             <div class="column">
-              <img src="./static/img/gallery-footer/002-Edit-Lightopia-0491.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                <img src="./static/img/gallery-footer/002-Edit-Lightopia-0491.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
             </div>
             <div class="column">
               <img src="./static/img/gallery-footer/003-Edit-Lightopia-0327.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
             </div>
             <div class="column">
-              <img src="./static/img/gallery-footer/004-Edit-Lightopia-0527.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                <img src="./static/img/gallery-footer/004-Edit-Lightopia-0527.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
             </div>
             <div class="column">
-              <img src="./static/img/gallery-footer/005-Edit-Lightopia-0137.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                <img src="./static/img/gallery-footer/005-Edit-Lightopia-0137.jpg"   onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
             </div>
             <div class="column">
-              <img src="./static/img/gallery-footer/006-Edit-Lightopia-0151.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+                <img src="./static/img/gallery-footer/006-Edit-Lightopia-0151.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
             </div>
             <div class="column">
-              <img src="./static/img/gallery-footer/007-Edit-Lightopia-0178.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+                <img src="./static/img/gallery-footer/007-Edit-Lightopia-0178.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
             </div>
             <div class="column">
-              <img src="./static/img/gallery-footer//009-Edit-Lightopia-0080.jpg"  onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+                <img src="./static/img/gallery-footer//009-Edit-Lightopia-0080.jpg"  onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
             </div>
             <div class="column">
-              <img src="./static/img/gallery-footer/010-lightopia-08.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+                <img src="./static/img/gallery-footer/010-lightopia-08.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
             </div>
             <div class="column">
                 <img src="./static/img/gallery-footer/011-Lightopia-BXL-Still-007-edit.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
-              </div>
-              <div class="column">
+            </div>
+            <div class="column">
                 <img src="./static/img/gallery-footer/012-Lightopia-BXL-Still-010-edit.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
-              </div>
+            </div>
         </div>
 
         <div id="myModal" class="modal">
             <span class="close cursor" onclick="closeModal()">&times;</span>
             <div class="modal-content">
-              <div class="mySlides">
+            <div class="mySlides">
                 <div class="numbertext">1 / 10</div>
                 <img src="./static/img/gallery-footer/002-Edit-Lightopia-0491.jpg">
-              </div>
-          
-              <div class="mySlides">
+            </div>
+            <div class="mySlides">
                 <div class="numbertext">2 / 10</div>
                 <img src="./static/img/gallery-footer/003-Edit-Lightopia-0327.jpg">
-              </div>
-          
-              <div class="mySlides">
+            </div>
+            <div class="mySlides">
                 <div class="numbertext">3 / 10</div>
                 <img src="./static/img/gallery-footer/004-Edit-Lightopia-0527.jpg">
-              </div>
-              
-              <div class="mySlides">
+            </div>
+            <div class="mySlides">
                 <div class="numbertext">4 / 10</div>
                 <img src="./static/img/gallery-footer/005-Edit-Lightopia-0137.jpg">
-              </div>
-              
-              <div class="mySlides">
+            </div>
+            
+            <div class="mySlides">
                 <div class="numbertext">5 / 10</div>
                 <img src="./static/img/gallery-footer/006-Edit-Lightopia-0151.jpg">
-              </div>
-          
-              <div class="mySlides">
+            </div>
+            <div class="mySlides">
                 <div class="numbertext">6 / 10</div>
                 <img src="./static/img/gallery-footer/007-Edit-Lightopia-0178.jpg">
-              </div>
-          
-              <div class="mySlides">
+            </div>
+            <div class="mySlides">
                 <div class="numbertext">7 / 10</div>
                 <img src="./static/img/gallery-footer/009-Edit-Lightopia-0080.jpg">
-              </div>
-              
-              <div class="mySlides">
+            </div>
+            
+            <div class="mySlides">
                 <div class="numbertext">8 / 10</div>
                 <img src="./static/img/gallery-footer/010-lightopia-08.jpg">
-              </div>
-              <div class="mySlides">
+            </div>
+            <div class="mySlides">
                 <div class="numbertext">9 / 10</div>
                 <img src="./static/img/gallery-footer/011-Lightopia-BXL-Still-007-edit.jpg">
-              </div>
-              <div class="mySlides">
+            </div>
+            <div class="mySlides">
                 <div class="numbertext">10 / 10</div>
                 <img src="./static/img/gallery-footer/012-Lightopia-BXL-Still-010-edit.jpg">
-              </div>
-              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-              <a class="next" onclick="plusSlides(1)">&#10095;</a>
-          
-              <div class="caption-container">
-                <p id="caption"></p>
-              </div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
         </div>
 
-        <script src="./data/lightbox.js"></script>
+        <script src="./static/js/lightbox.js"></script>
 
         <div class="fourth default">
             <div class="fourth-content">
