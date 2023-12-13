@@ -19,7 +19,9 @@ const faqs = [
     },
     {
         type: "Algemeen",
-        question: `Het lantaarn- en lichtfestival wordt geopend van 18 november 2022 tot 8 januari 2023. Kies je data.
+        question:
+            "Op welke data vindt het evenement plaats en wat zijn de openingsuren?",
+        answer: `Het lantaarn- en lichtfestival wordt geopend van 18 november 2022 tot 8 januari 2023. Kies je data.
     
         Openingsuren:  
         Deuren open van 17u00 tot 20u30 (laatste toegang).

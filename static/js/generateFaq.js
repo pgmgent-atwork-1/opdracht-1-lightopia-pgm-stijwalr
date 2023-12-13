@@ -5,11 +5,13 @@
         let html = "";
         for (const question of faqs) {
             html += `
-            <button class="accordion">${question.question}</button>
-            <div class="panel">
+            <div class="openBorder">
+                <button class="accordion">${question.question}</button>
+                <div class="panel">
                 <p>
                 ${question.answer}
                 </p>
+                </div>
             </div>
             `;
         }
