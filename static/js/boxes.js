@@ -3,7 +3,7 @@
     const generateHTMLForBoxes = (boxes) => {
         let html = "";
         for (const box of boxes) {
-            html += `<div class="box" style="left:${box.X}; top:${box.Y};" data-src="${box.img}"></div>`;
+            html += `<div class="box" style="left: ${box.X}; top: ${box.Y};" data-src="${box.img}"></div>`;
         }
         return html;
     };
