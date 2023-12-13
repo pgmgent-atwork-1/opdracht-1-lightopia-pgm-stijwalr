@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lightopia</title>
+    <link rel="stylesheet" href="./static/css/reset.css">
+    <link rel="stylesheet" href="./static/css/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div>
+        <nav id="navbar">
+            <a href="index.html">
+                <img src="./static/img/logo.svg" alt="">
+            </a>
+            <ul>
+                <li><a href="parcours.html">Parcours</a></li>
+                <li><a href="praktisch.html">Praktisch</a></li>
+                <li><a href="galerij.html">Gallerij</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="" class="ticket"><span>Tickets</span></a></li>
+            </ul>
+        </nav>
+
+        <script src="./static/js/nav.js"></script>
+        
+    </div>
+    <main>
+        <div class="default praktisch">
+            <div class="content-prak">
+                <div class="sections">
+                    <h1>
+                        WAAR EN WANNEER
+                    </h1>
+                    <div class="smallLine"></div>
+                    <div class="prak-divide">
+                        <p>
+                            Lightopia Brussels vindt plaats van 18 november 2022 tot en met 8 januari 2023 in het kasteel van Groot-Bijgaarden.
+                        </p>
+                        <p>
+                            Het evenement is vlot bereikbaar met de auto en het openbaar vervoer. <a href="" class="route">Plan je route online</a>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="sections">
+                    <p><span>UREN</span></p>
+                <div class="prak-divide">
+                    <p>Open van 17u00 tot 22u00</p>
+                    <p>Toegang mogelijk tot 20u30</p>
+                </div>
+                <p>Het park is gesloten op 24 en 25 december 2022</p>
+
+                </div>
+
+                <div class="sections">
+                    <h1>
+                        PARKING VAN HOCKÉ
+                    </h1>
+                    <div class="smallLine"></div>
+                    <div class="prak-divide">
+                        <p>Parkeeradres:</p>
+                        <p><a href="" class="route">A. Gossetlaan 13 - 1702 Groot-Bijgaarden</a></p>
+                        <p>Onze parkeerwachters zullen u begeleiden naar de juiste plaats.</p>
+                    </div>
+                    <div class="prak-divide">
+                        <p>U kan uw parkeerticket online kopen ter plaatse voor 5 EUR per wagen.</p>
+                        <p>De parking is enkel toegankelijk op vertoon van een parkeerticket en voor de duur van het bezoek.</p>
+                    </div>
+                    <p>Maak gebruik van onze shuttledienst die u veilig naar Lightopia Brussels brengt.</p>
+                </div>
+                <div class="sections">
+                    <h1>
+                        ETEN EN DRINKEN
+                    </h1>
+                    <div class="smallLine"></div>
+                    <p>Kom tijdens uw wandeling in het park genieten van de gezellige sfeer in het Twinkling Café. Wij bieden hamburgers, frieten, glühwein, warme chocolademelk en andere dranken aan.</p>
+                </div>
+            </div>
+            <img src="./static/img/background-05-l.svg" alt="" class="wind leftBranch">
+            <img src="./static/img/background-05-r.svg" alt="" class="wind rightBranch">
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <img src="./static/img/gallery-footer/002-Edit-Lightopia-0491.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+              <img src="./static/img/gallery-footer/003-Edit-Lightopia-0327.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="./static/img/gallery-footer/004-Edit-Lightopia-0527.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="./static/img/gallery-footer/005-Edit-Lightopia-0137.jpg"   onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="./static/img/gallery-footer/006-Edit-Lightopia-0151.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="./static/img/gallery-footer/007-Edit-Lightopia-0178.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="./static/img/gallery-footer//009-Edit-Lightopia-0080.jpg"  onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="./static/img/gallery-footer/010-lightopia-08.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="./static/img/gallery-footer/011-Lightopia-BXL-Still-007-edit.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="./static/img/gallery-footer/012-Lightopia-BXL-Still-010-edit.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+            </div>
+        </div>
+
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+            <div class="mySlides">
+                <div class="numbertext">1 / 10</div>
+                <img src="./static/img/gallery-footer/002-Edit-Lightopia-0491.jpg">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">2 / 10</div>
+                <img src="./static/img/gallery-footer/003-Edit-Lightopia-0327.jpg">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">3 / 10</div>
+                <img src="./static/img/gallery-footer/004-Edit-Lightopia-0527.jpg">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">4 / 10</div>
+                <img src="./static/img/gallery-footer/005-Edit-Lightopia-0137.jpg">
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">5 / 10</div>
+                <img src="./static/img/gallery-footer/006-Edit-Lightopia-0151.jpg">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">6 / 10</div>
+                <img src="./static/img/gallery-footer/007-Edit-Lightopia-0178.jpg">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">7 / 10</div>
+                <img src="./static/img/gallery-footer/009-Edit-Lightopia-0080.jpg">
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">8 / 10</div>
+                <img src="./static/img/gallery-footer/010-lightopia-08.jpg">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">9 / 10</div>
+                <img src="./static/img/gallery-footer/011-Lightopia-BXL-Still-007-edit.jpg">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">10 / 10</div>
+                <img src="./static/img/gallery-footer/012-Lightopia-BXL-Still-010-edit.jpg">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+
+        <script src="./static/js/lightbox.js"></script>
+
+        <div class="fourth default">
+            <div class="fourth-content">
+            <h1>
+                SCHRIJF U IN VOOR ONZE NIEUWSBRIEF
+            </h1>
+            <div class="smallLine"></div>
+            <form action="">
+                <input type="text" placeholder="E-mail adress:" id="">
+            </form>
+            <a href="" class="ticketKoop">Inschrijven</a>
+        </div>
+        <img src="./static/img/background-04-l.png" alt="" class="NB-left">
+        <img src="./static/img/background-04-r.png" alt="" class="NB-right">
+        </div>
+    </main>
+    <footer>
+        <div class="footer-text">
+            <div>
+                <h2>LIGHTOPIA BRUSSELS</h2>
+                <div class="smallLine-foot"></div>
+                <div class="footer-contact">
+                    <p>
+                        Kasteel van Groot-Bijgaarden
+                    </p>
+                    <p>
+                        Isidoor Van Beverenstraat 5
+                    </p>
+                        <p>
+                            1702 Groot-Bijgaarden
+                        </p>
+                    <p>
+                        contact@kasteelgrootbijgaarden.be
+                    </p>
+                    <p>
+                        Optac n.v.
+                    </p>
+                    <p>
+                        BE0431 656 433
+                    </p>
+                </div>
+                <figure>
+                    <img src="../app/static/img/logos/facebook (1).png" alt="">
+                    <img src="../app/static/img/logos/instagram (1).png" alt="">
+                    <img src="../app/static/img/logos/youtube (1).png" alt="">
+                </figure>
+                <div class="footer-links">
+                    <p>
+                        <a href="">Algemene voorwaarden</a>
+                    </p>
+                    <p>
+                        <a href="">Cookies & privacy</a>
+                    </p>
+                    <p>
+                        <a href="">Website by core-graphics.be</a>
+                    </p>
+                </div>
+            </div>
+            <div>
+                <h2>TAAL</h2>
+            <div class="smallLine-foot"></div>
+            <div class="footer-links lang">
+                <p><a href="">Nederlands</a></p>
+            <p><a href="">Français</a></p>
+            <p><a href="">English</a></p>
+            </div>
+            </div>
+        </div>
+        <div class="footer-logo">
+            <img src="../app/static/img/logo.svg" alt="">
+        </div>
+    </footer>
+</body>
+</html>
